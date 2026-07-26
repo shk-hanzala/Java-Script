@@ -52,12 +52,12 @@ console.log("Hello", firstName +" "+ lastName);
 //QUESTION 07
 let username = prompt("enter your name");
 let usercity = prompt("enter your city");
-console.log("Hello", username);
+console.log("Hello", username "!");
 console.log("Welcome to", usercity);
 
 //QUESTION 09
 let fpl = prompt("favorite programming language");
-console.log("Your favourite programming language is", fpl);
+console.log("Your favourite programming language is", fpl ".");
 
 
 
