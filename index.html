@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            padding: 30px;
+        }
+
+        .btn {
+            display: grid;
+            grid-auto-flow: column;
+            grid-template-rows: repeat(10, auto);
+            gap: 14px 24px;
+            padding: 10px;
+        }
+
+        .btn a {
+            text-decoration: none;
+        }
+
+        .btn button {
+            width: 160px;
+            padding: 12px 10px;
+            border: none;
+            border-radius: 10px;
+            background: linear-gradient(135deg, #007BFF, #0056b3);
+            color: white;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            box-shadow: 0 3px 6px rgba(0, 91, 179, 0.35);
+            transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+        }
+
+        .btn button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 91, 179, 0.45);
+            background: linear-gradient(135deg, #0069e0, #003f8a);
+        }
+
+        .btn button:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 4px rgba(0, 91, 179, 0.4);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="btn">
+        <a href="Class-01/index.html"><button>Assignment-01</button></a>
+        <a href="Class-02/index.html"><button>Assignment-02</button></a>
+        <a href="Class-03/index.html"><button>Assignment-03</button></a>
+        <a href="Class-04/index.html"><button>Assignment-04</button></a>
+        <a href="Class-05/index.html"><button>Assignment-05</button></a>
+        <a href="Class-06/index.html"><button>Assignment-06</button></a>
+        <a href="Class-07/index.html"><button>Assignment-07</button></a>
+        <a href="Class-08/index.html"><button>Assignment-08</button></a>
+        <a href="Class-09/index.html"><button>Assignment-09</button></a>
+        <a href="Class-10/index.html"><button>Assignment-10</button></a>
+        <a href="Class-11/index.html"><button>Assignment-11</button></a>
+    </div>
+</body>
+
+</html>
