@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile Card</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="card">
+
+        <h1 id="profileTitle">My Profile</h1>
+
+        <img 
+            id="profileImage"
+            src="Image/image.jpg"
+            alt="Profile Image"
+            onmouseover="imageOver()"
+            onmouseout="imageOut()"
+        >
+
+        <h2 id="profileName">Muhammad Hanzala</h2>
+
+        <h3 id="profileRole">JavaScript Learner</h3>
+
+        <p id="profileDescription">
+            I am learning JavaScript and practicing DOM manipulation
+            to build interactive websites.
+        </p>
+
+        <!-- User Input -->
+        <input 
+            type="text" 
+            id="userName"
+            placeholder="Enter your name"
+        >
+
+        <button onclick="showName()">
+            Show My Name
+        </button>
+
+        <div class="buttons">
+
+            <button onclick="changeProfile()">
+                Change Profile
+            </button>
+
+            <button onclick="changeImage()">
+                Change Image
+            </button>
+
+        </div>
+
+        <p id="mouseMessage">
+            Move your mouse over the image 👆
+        </p>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
