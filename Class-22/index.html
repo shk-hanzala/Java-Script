@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>User Registration Form</title>
+</head>
+
+<body>
+
+    <h2>User Registration</h2>
+
+    <form onsubmit="registerUser()">
+
+        <!-- Part 1: Inputs -->
+
+        <label>Username:</label>
+        <input type="text" id="username" onfocus="fieldFocus('Username')" onblur="fieldBlur('Username')">
+        <br><br>
+
+        <label>Email:</label>
+        <input type="email" id="email" onfocus="fieldFocus('Email')" onblur="fieldBlur('Email')">
+        <br><br>
+
+        <label>Password:</label>
+        <input type="password" id="password" onfocus="fieldFocus('Password')" onblur="fieldBlur('Password')">
+        <br><br>
+
+        <label>Age:</label>
+        <input type="number" id="age">
+        <br><br>
+
+        <label>Gender:</label>
+        <select id="gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select>
+        <br><br>
+
+        <label>City:</label>
+        <select id="city">
+            <option value="Karachi">Karachi</option>
+            <option value="Lahore">Lahore</option>
+            <option value="Islamabad">Islamabad</option>
+            <option value="Other">Other</option>
+        </select>
+        <br><br>
+
+        <!-- Part 3: Mouse Events -->
+
+        <button type="submit" onclick="submitClicked(); registerUser()" onmouseover="mouseEnter()"
+            onmouseout="mouseLeave()">
+            Submit
+        </button>
+
+    </form>
+
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
