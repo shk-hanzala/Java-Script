@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireless headphone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="card">
+
+        <img id="productImage" src="images/White.webp" onmouseover="changeImage()" onmouseout="originalImage()">
+
+        <h2 id="productName">Wireless Headphone</h2>
+
+        <p id="description">Trance 100 ANC Wireless Headphone.</p>
+
+        <h3 id="price">Rs. 3,500</h3>
+
+        <button onclick="buyNow()">Buy Now</button>
+        <button onclick="changeProduct()">Change Product</button>
+
+        <br><br>
+
+        <input type="text" id="userName" placeholder="Enter your name">
+        <button onclick="welcomeUser()">Welcome</button>
+
+        <p id="welcomeMessage"></p>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
