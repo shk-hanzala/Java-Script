@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Rules and Course Information</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <h2>Student Rules</h2>
+
+    <div id="studentRules">
+        <p>Rule 1: Attend classes regularly.</p>
+        <p>Rule 2: Submit assignments on time.</p>
+        <p>Rule 3: Respect teachers and classmates.</p>
+    </div>
+
+    <button onclick="highlightRules()">Highlight Rules</button>
+
+    <h2>Course Information</h2>
+
+    <div id="courseInfo">
+        <p>HTML is used to create webpages.</p>
+        <p>CSS is used to style webpages.</p>
+        <p>JavaScript is used to add interactivity.</p>
+    </div>
+
+    <button onclick=`"highlightCourse()">Highlight Course</button>
+
+    <script>
+        function highlightRules() {
+            // Select the Student Rules section
+            let section = document.getElementById("studentRules");
+
+            // Get all paragraphs inside the section
+            let paragraphs = section.getElementsByTagName("p");
+
+            // Loop through all paragraphs
+            for (let i = 0; i < paragraphs.length; i++) {
+                paragraphs[i].innerHTML =
+                    paragraphs[i].innerHTML;
+
+                paragraphs[i].className = "highlight";
+            }
+        }
+
+        function highlightCourse() {
+            // Select the Course Information section
+            let section = document.getElementById("courseInfo");
+
+            // Get all paragraphs inside the section
+            let paragraphs = section.getElementsByTagName("p");
+
+            // Loop through all paragraphs
+            for (let i = 0; i < paragraphs.length; i++) {
+                paragraphs[i].innerHTML =
+                    paragraphs[i].innerHTML;
+
+                paragraphs[i].className = "highlight";
+            }
+        }
+    </script>
+
+</body>
+</html>

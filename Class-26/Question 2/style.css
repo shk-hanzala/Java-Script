@@ -1,0 +1,14 @@
+.myImage {
+            width: 300px;
+            border: 5px solid black;
+            border-radius: 10px;
+            transition: 0.5s;
+        }
+
+        .imageEffect {
+            width: 400px;
+            border: 5px solid rgb(4, 68, 240);
+            border-radius: 30px;
+            box-shadow: 0 0 25px rgb(4, 126, 240);
+            transform: rotate(5deg);
+        }
