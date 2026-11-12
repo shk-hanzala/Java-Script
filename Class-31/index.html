@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototype</title>
+</head>
+
+<body>
+    <script>
+        // Task 1
+        function Student(name, rollNumber, marks) {
+            this.name = name;
+            this.rollNumber = rollNumber;
+            this.marks = marks;
+        }
+
+        Student.prototype.showDetails = function () {
+            console.log("Student Name: " + this.name);
+            console.log("Roll Number: " + this.rollNumber);
+            console.log("Marks: " + this.marks);
+        }
+
+        Student.prototype.updateMarks = function (newMarks) {
+            this.marks = newMarks;
+        }
+
+        let student1 = new Student("Ali", 101, 85);
+        let student2 = new Student("Ahmed", 102, 90);
+        let student3 = new Student("Hassan", 103, 78);
+
+        student1.showDetails();
+        student2.showDetails();
+        student3.showDetails();
+
+        student1.updateMarks(95);
+
+        console.log(student1.marks);
+
+        console.log(student1.showDetails === student2.showDetails);
+        console.log(student2.showDetails === student3.showDetails);
+        console.log(student1.showDetails === student3.showDetails);
+
+
+        // Task 2
+
+        console.log("name" in student1);
+        console.log("showDetails" in student1);
+
+        console.log(student1.hasOwnProperty("name"));
+        console.log(student1.hasOwnProperty("showDetails"));
+
+        console.log(typeof student1.showDetails);
+
+
+        // Task 3
+
+        Student.prototype.institute = "Saylani";
+
+        console.log(student1.institute);
+        console.log(student2.institute);
+        console.log(student3.institute);
+
+        console.log(Object.getPrototypeOf(student1));
+
+        console.log(Object.getPrototypeOf(student1) === Student.prototype);
+    </script>
+</body>
+
+</html>
